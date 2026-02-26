@@ -1,10 +1,13 @@
 name: Harsha
+
 on: workflow_dispatch
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
-        - name: build-step
-        run: echo "ur app is built"
+          - name: build-step
+          run: echo "ur app is built"
   
   
