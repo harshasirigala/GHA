@@ -8,6 +8,16 @@ jobs:
     
     steps:
       - name: build-step
-        run: echo "ur app is built"
+        run: |
+          echo "ur app is built"
+          echo "ur app is built"
+   deploy:
+     runs-on: ubuntu-latest
+    
+     steps:
+       - name: build-step
+         run: |
+           echo "ur app is built"
+           echo "ur app is built"
   
   
