@@ -1,5 +1,5 @@
 name: Harsha
-on: workflow_dispatch
+on: push
 
 jobs:
   build:
@@ -7,21 +7,4 @@ jobs:
     steps:
       - name: build-step
         run: |
-          echo "ur app is built"
-          echo "ur app is built"
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: build-step
-        run: |
-          echo "ur app is built"
-          echo "ur app is built"
-  deploy:
-   runs-on: ubuntu-latest
-   needs: test
-   steps:
-    - name: build-step
-      run: |
-        echo "ur app is built"
-        echo "ur app is built"
+          echo "push was successful"
