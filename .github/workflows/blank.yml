@@ -1,5 +1,4 @@
 name: Harsha
-
 on: workflow_dispatch
 
 jobs:
@@ -12,12 +11,12 @@ jobs:
           echo "ur app is built"
           echo "ur app is built"
    deploy:
-     runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     
-     steps:
-       - name: build-step
-         run: |
-           echo "ur app is built"
-           echo "ur app is built"
+    steps:
+      - name: build-step
+        run: |
+          echo "ur app is built"
+          echo "ur app is built"
   
   
