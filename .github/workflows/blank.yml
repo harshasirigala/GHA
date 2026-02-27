@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: build-step
         run: |
-          echo "pull was successful"
+          echo "say ${{vars.MY_VAR}}"
