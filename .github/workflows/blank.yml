@@ -1,4 +1,4 @@
-name: Harsha
+name: Actions
 on: 
   push:
     branches:
@@ -7,9 +7,10 @@ on:
     branches:
       - main
 jobs:
-  build:
+  Action_demo:
     runs-on: ubuntu-latest
     steps:
-      - name: build-step
-        run: |
-          echo "say ${{vars.MY_VAR}}"
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: print
+        run: cat index.html
